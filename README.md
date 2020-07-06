@@ -54,7 +54,6 @@ reload hotload 热加载/热部署
 ASM在指令层次上手动操纵字节码，可以直接生产 .class 字节码文件，也可以在类被加载入JVM之前动态修改类字节码。
 
 ##### 1. API
-![b1d33d02624987c8755c50d7dea1f3f0.png](en-resource://database/989:1)
 
 - ClassReader：用于读取已经编译好的.class文件。
 - ClassWriter：用于重新构建编译后的类，如修改类名、属性以及方法，也可以生成新的类的字节码文件。
