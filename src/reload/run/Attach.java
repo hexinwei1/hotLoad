@@ -19,7 +19,7 @@ public class Attach {
              * D:/reload.jar - 热加载源码 InstrumentationTest agentmain()
              * D:/newCode.jar - 需要加载的新的字节码
              */
-            vm.loadAgent("D:/reload.jar", "D:/newCode.jar");
+            vm.loadAgent("jar/reload.jar", "jar/newCode.jar");
         }
     }
 }

@@ -8,7 +8,6 @@ import javassist.CtClass;
 import javassist.CtMethod;
 
 public class TestTransformer implements ClassFileTransformer {
-
     /**
      * 类文件被加载时调用
      * @param loader
