@@ -1,4 +1,23 @@
 [TOC]
+* [hotLoad]()
+* [1. 演示 hotLoad 说明]()
+* [2. 目录说明]()
+* [3. 热加载原理]()
+ * [3.1 字节码增强]()
+    * [3.1.1 ASM]()
+       * [1. API]()
+       * [2. 使用：ASM实现AOP]()
+    * [3.1.2 Javassist]()
+       * [API]()
+    * [3.1.3 重新编译类 热加载用]()
+ * [3.2 修改的字节码动态载入JVM]()
+    * [3.2.1 Instrumentation]()
+    * [1. ClassFileTransformer 类文件转换器]()
+    * [2. Instrumentation API]()
+    * [3.2.2 Instrumentation   Java Agent  只能在启动时操作]()
+    * [3.2.3 Instrumentation   Attach  运行时操作，热加载用]()
+ * [3.3 参考]()
+
 
 # hotLoad
 
@@ -54,7 +73,6 @@ reload hotload 热加载/热部署
 ASM在指令层次上手动操纵字节码，可以直接生产 .class 字节码文件，也可以在类被加载入JVM之前动态修改类字节码。
 
 ##### 1. API
-![b1d33d02624987c8755c50d7dea1f3f0.png](en-resource://database/989:1)
 
 - ClassReader：用于读取已经编译好的.class文件。
 - ClassWriter：用于重新构建编译后的类，如修改类名、属性以及方法，也可以生成新的类的字节码文件。
