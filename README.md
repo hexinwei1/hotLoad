@@ -29,9 +29,7 @@ reload hotload 热加载/热部署
 
 1. clone 项目，IDE打开
 
-2. reload.jar 、newCode.jar 放在D盘根目录下，路径是在代码中写死的
-
-3. 运行 `reload.run.RunTest` ，控制台输出 
+2. 运行 `reload.run.RunTest` ，控制台输出 
 
    ```
    11111111111111111111
@@ -40,7 +38,7 @@ reload hotload 热加载/热部署
    22222222222222222222
    ```
 
-4. 运行 `reload.run.Attach`，控制台输出
+3. 运行 `reload.run.Attach`，控制台输出
 
    ```
    AAAAAAAAAAAAAAAAAAAA
@@ -378,7 +376,7 @@ public class MyClassTansformer implements ClassFileTransformer {
 
     }
     ```
-```
+
 
 - premain()在main方法之前运行
 - premain()所在jar包，MANIFEST.MF需要如下设置：
@@ -404,7 +402,7 @@ Can-Retransform-Classes: true
 2. premain()在main方法之前运行
 3. Test.print()方法字节码被改变了，加了start end
 
-​```java
+```java
 premain:agentArgs=null
 load class=sun/nio/cs/ThreadLocalCoders, args=null
 load class=sun/nio/cs/ThreadLocalCoders$1, args=null
